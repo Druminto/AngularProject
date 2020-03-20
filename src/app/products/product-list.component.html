@@ -44,7 +44,7 @@
                         </td>
                         <td><a [routerLink] = "['/products', product.productId]">{{product.productName}}</a></td>
                         <td>{{product.productCode | lowercase | convertToSpaces:'-'}}</td>
-                        <td></td>
+                        <td>{{product.releaseDate}}</td>
                         <td>{{product.price | currency }}</td>
                         <td><pm-star [rating]='product.starRating'
                             (starClicked) = 'onStarClicked($event)'></pm-star></td>
